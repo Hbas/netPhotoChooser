@@ -2,5 +2,8 @@
 bin
 obj
 
+# compiled extensions
+*.suo
+
 # mstest test results
 TestResults
