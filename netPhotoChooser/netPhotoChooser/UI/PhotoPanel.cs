@@ -20,7 +20,14 @@ namespace netPhotoChooser.UI
             stars.Add(star1);
             stars.Add(star2);
             stars.Add(star3);
+            this.pictureBox.MouseDoubleClick += new MouseEventHandler(pictureBox_MouseDoubleClick);
         }
+
+        void pictureBox_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            this.OnMouseDoubleClick(e);
+        }
+
 
         public Image Image
         {
@@ -35,6 +42,8 @@ namespace netPhotoChooser.UI
         }
 
 
+
+
         public void Rate(int numberOfStarsToShow)
         {
             foreach (var star in this.stars)
@@ -44,7 +53,6 @@ namespace netPhotoChooser.UI
             {
                 this.stars[i].Visible = true;
             }
-            this.Refresh();
         }
 
     }

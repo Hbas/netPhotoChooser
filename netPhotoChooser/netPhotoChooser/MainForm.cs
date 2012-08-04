@@ -44,12 +44,11 @@ namespace netPhotoChooser
             }
         }
 
-        //TODO: Why this method is not called?
-        private void photoPanel_MouseClick(object sender, MouseEventArgs e)
+        private void photoPanel_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             SwitchStyle();
         }
-        
+
         private void SwitchStyle()
         {
             if (this.FormBorderStyle == FormBorderStyle.None)
@@ -77,10 +76,8 @@ namespace netPhotoChooser
             Application.Exit();
         }
 
-        private void photoPanel_MouseCaptureChanged(object sender, EventArgs e)
-        {
 
-        }
+
 
 
 

@@ -194,7 +194,7 @@
             this.photoPanel.Size = new System.Drawing.Size(284, 238);
             this.photoPanel.TabIndex = 1;
             this.photoPanel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.photoPanel_KeyPress);
-            this.photoPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.photoPanel_MouseClick);
+            this.photoPanel.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.photoPanel_MouseDoubleClick);
             // 
             // MainForm
             // 
